@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+<div class="row">
+    <div class="card">
+        <h5 class="card-header">{{ post.title }} by <span class="text-primary">{{ post.author }}</span></h5>
+        <div class="card-body">
+            <h5 class="card-title">Published: {{ post.publish }}</h5>
+            <p class="card-text">{{ post.body }}</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
