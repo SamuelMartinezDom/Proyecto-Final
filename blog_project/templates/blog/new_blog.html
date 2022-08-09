@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+
+{% for post in posts %}
+New_blog
+{% endfor %}
+
+<form action="" method="POST">
+{% csrf_token %}
+
+    <p><input type="text" name="usuario" placeholder="Usuario"></p>
+
+    <p><input type="text" name="contraseña" placeholder="Contraseña"></p> 
+
+    <p><input type="submit" value="Enviar"></p>
+
+</form>
+
+
+{% endblock %}
